@@ -1,0 +1,35 @@
+{
+  "positions" : [ {
+    "id" : "/tech_service/ResponsePrice",
+    "x" : 987,
+    "y" : 623
+  }, {
+    "id" : "/tech_service/ResponseWhen",
+    "x" : 987,
+    "y" : 1178
+  }, {
+    "id" : "/tech_service/ResponseRepair",
+    "x" : 987,
+    "y" : 1741
+  }, {
+    "id" : "/tech_service/ResponseWhyTO",
+    "x" : 987,
+    "y" : 2331
+  }, {
+    "id" : "/tech_service/ResponseNewCarIssue",
+    "x" : 987,
+    "y" : 2924
+  }, {
+    "id" : "/tech_service/ResponseDiscount",
+    "x" : 987,
+    "y" : 3489
+  }, {
+    "id" : "/tech_service/ResponseDuration",
+    "x" : 987,
+    "y" : 4044
+  }, {
+    "id" : "/tech_service/ResponsePlan",
+    "x" : 987,
+    "y" : 4598
+  } ]
+}

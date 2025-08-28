@@ -60,27 +60,27 @@
       "hidden" : false
     },
     "records" : [ {
-      "type" : "synonyms",
+      "type" : "pattern",
       "rule" : [ "kia" ],
       "value" : ""
     }, {
-      "type" : "synonyms",
+      "type" : "pattern",
       "rule" : [ "BMV" ],
       "value" : ""
     }, {
-      "type" : "synonyms",
+      "type" : "pattern",
       "rule" : [ "audi" ],
       "value" : ""
     }, {
-      "type" : "synonyms",
+      "type" : "pattern",
       "rule" : [ "тойота" ],
       "value" : ""
     }, {
-      "type" : "synonyms",
+      "type" : "pattern",
       "rule" : [ "лада" ],
       "value" : ""
     }, {
-      "type" : "synonyms",
+      "type" : "pattern",
       "rule" : [ "мерседес" ],
       "value" : ""
     } ]
