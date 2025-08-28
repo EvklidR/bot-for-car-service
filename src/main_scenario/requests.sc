@@ -6,7 +6,7 @@ theme: /main
         go!: /main/CollectData
         
     state: CollectData
-        q: {[@_car] [@mystem.persn] [@duckling.phone-number] *}
+        q: {[@_car]* [@mystem.persn]* [@duckling.phone-number]* *}
         script: checkAndAskData($context, $parseTree);
         if: $context.client.filled
             go!: /main/Confirm
