@@ -3,11 +3,7 @@ function checkAndAskData(context, parseTree) {
 
     if (parseTree["_mystem.persn"]) context.client.fio = parseTree["_mystem.persn"];
     if (parseTree["_duckling.phone-number"]) context.client.phone = parseTree["_duckling.phone-number"];
-    if (parseTree["_car"]) {
-        context.client.car = (typeof parseTree["_car"] === "object" && parseTree["_car"].text)
-            ? parseTree["_car"].text
-            : parseTree["_car"];
-    }
+    if (parseTree["_car"]) context.client.car = parseTree["_car"].text;
 
     var filled = 0;
     if (context.client.fio) filled++;
