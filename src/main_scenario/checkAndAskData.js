@@ -17,12 +17,12 @@ function checkAndAskData(context, parseTree) {
     context.client.filled = filled >= 2;
 
     if (!context.client.filled) {
-        const missing = [];
+        var missing = [];
         if (!context.client.fio) missing.push("ФИО");
         if (!context.client.phone) missing.push("номер телефона");
         if (!context.client.car) missing.push("марку автомобиля");
 
-        const question = "Пожалуйста, укажите недостающие данные: " + missing.join(", ") + ".";
+        var question = "Пожалуйста, укажите недостающие данные: " + missing.join(", ") + ".";
         $reactions.answer(question);
     }
 }
