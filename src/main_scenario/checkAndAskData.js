@@ -9,7 +9,7 @@ function checkAndAskData(context, parseTree) {
             : parseTree["_car"];
     }
 
-    let filled = 0;
+    var filled = 0;
     if (context.client.fio) filled++;
     if (context.client.phone) filled++;
     if (context.client.car) filled++;
