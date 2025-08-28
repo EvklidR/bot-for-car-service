@@ -1,0 +1,11 @@
+{
+  "positions" : [ {
+    "id" : "/main/CollectData",
+    "x" : 1071,
+    "y" : 653
+  }, {
+    "id" : "/main/Confirm",
+    "x" : 290,
+    "y" : 1270
+  } ]
+}
