@@ -23,6 +23,28 @@ require: common_patterns.sc
 
 theme: /
 
+    init:
+    
+        bind("preProcess", function($context) {
+            if ($context.request && $context.request.query) {
+                var text = $context.request.query;
+        
+                if (text.length > 300) {
+                    text = text.substring(0, 300);
+                }
+        
+                text = text.replace(/[^а-яА-Яa-zA-Z0-9\s,.!?-]/g, " ");
+        
+                text = text.replace(/\s+/g, " ").trim();
+        
+                text = text.replace(/([!?])\1+/g, "$1");
+        
+                text = text.toLowerCase();
+        
+                $context.request.query = text;
+            }
+        });
+
     state: Start
         q!: $regex</start>
         a: Здравствуйте! Я бот автосервиса.

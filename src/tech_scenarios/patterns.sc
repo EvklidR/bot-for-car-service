@@ -1,16 +1,16 @@
 patterns:
     $priceVerb = (стои* | цен* | рассчита* | дорого* | дешев*)
-    $priceQuery = {$priceVerb * $TO }
+    $priceQuery = {* $priceVerb * $TO *}
 
     $whenVerb = (надо | когда | ехать | проходить | делать)
-    $whenTO = {$whenVerb * $TO}
+    $whenTO = {* $whenVerb * $TO *}
 
     $repairAction = (почини* | исправь* | замени* | устрани* | верни* | слома*)
     $repairObject = (бампер | фильтр* | деталь* | работу)
-    $repairClaim = {$repairAction * [$repairObject]}
+    $repairClaim = {* $repairAction * [$repairObject] *}
     
     $whyVerb = (* зачем нужно * | * для чего * )
-    $whyTO = {$whyVerb * $TO}
+    $whyTO = {* $whyVerb * $TO *}
     
     $newCarIssue = (* купил машину * гудит * | * недавно приобрел * гудит *)
     $discountQuery = (* скидк* | * акци* )
